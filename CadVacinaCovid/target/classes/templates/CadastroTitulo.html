@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">	
+<head>
+		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+		<meta charset="UTF-8">
+	<title>Pág de Vacina de Covid-19</title>
+</head>
+<body>
+	
+ <nav class="navbar navbar-dark bg-primary">	 
+  	<!--  	<a class="navbar-brand" > 		<img src="/images/ifmtlogo.png" width="100" height="100" alt="IFMT" /> 	</a>  -->	
+	<a class="navbar-brand" > 
+	 <img src="/images/cbacima.png" alt="Cba" width="1200" height="100" />   
+	 </a> 
+
+<form action="/titulos" method="POST"> <!-- Estamos mapeando o que fizemos no controller --> 	  
+ </nav>
+<!-- <h1>Olá, Adam Sinaga</h1> -->
+<h1>DADOS DO SOLICITANTE </h1> 
+<div class="card">
+	<div class="card-header tux-titulo-panel"> <span class="tux-titulo-panel"> 
+		Por favor, informe todos os campos abaixo para que possamos realizar seu Pré-Cadastro.
+		<br>Caso não possua o número do Cartão SUS, faça uma consulta no ConecteSUS. 
+		<br> Ou procure uma unidade de saúde básica mais próxima. <br></span> 	
+</div>
+	<div class="card-body">
+		
+	<div class="form-group row">
+		<label for="CNS Cartão Nacional de Saúde" class="col-sm-2 col-form-label"> CNS - Cartão Nacional de Saúde*</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="CNS" placeholder="CNS" name="CNS">
+		</div>
+	</div>  
+	
+	<div class="form-group row">
+		<label for="CPF" class="col-sm-2 col-form-label"> CPF* </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="CPF" placeholder="CPF" name="CPF">
+		</div>
+	</div> 
+	
+	<div class="form-group row">
+		<label for="NomeCompleto" class="col-sm-2 col-form-label"> Nome Completo* </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="NomeCompleto" placeholder="NomeCompleto" name="NomeCompleto">
+		</div>
+	</div> 
+	
+	<div class="form-group row">
+		<label for="Telefone" class="col-sm-2 col-form-label"> Telefone * </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="Telefone" placeholder="Telefone" name="Telefone">
+		</div>
+	</div> 
+	
+	<div class="form-group row">
+		<label for="Email" class="col-sm-2 col-form-label"> Email* </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="Email " placeholder="Email " name="Email">
+		</div>
+	</div><br>
+	
+	<div class="form-group row">
+		<label for="DataNascimento*" class="col-sm-2 col-form-label"> Data de nascimento* </label>
+		<div class="col-sm-2">
+			<input type="text" class="form-control" id="DataNascimento" name="DataNascimento">
+		</div>
+	</div><br> 
+	
+	<div class="form-group row">
+		<label for="sexo" class="col-sm-2 col-form-label">Sexo*</label>
+		<div class="col-sm-3">
+			<select class="form-control" id="sexo" name="sexo">
+				<option>Masculino</option>
+				<option>Feminino</option>
+				<option>Outro</option>
+			</select>
+		</div>
+	</div>
+		
+	<div class="form-group row">
+		<label for="mae" class="col-sm-2 col-form-label"> Nome da mãe* </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="mae" placeholder="mae" name="mae">
+		</div>
+	</div>
+
+
+	<div class="form-group row">
+		<label for="CEP" class="col-sm-2 col-form-label"> Informe seu CEP* </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="CEP" placeholder="CEP" name="cep">
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="Bairro" class="col-sm-2 col-form-label"> Informe o Bairro*</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="Bairro" placeholder="Bairro" name="bairro">
+		</div>
+	</div>
+
+
+	<div class="form-group row">
+		<label for="endereco" class="col-sm-2 col-form-label"> Informe seu Endereço*</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="endereco" placeholder="endereco" name="endereco">
+		</div>
+	</div>
+
+	<div class="form-group row">
+		<label for="numero" class="col-sm-2 col-form-label"> Informe o numero* </label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" id="numero" placeholder="numero" name="numero">
+		</div>
+	</div>
+
+
+	<div class="form-group row">
+		<label for="profissao" class="col-sm-2 col-form-label"> Informe sua Profissão* </label>
+		<div class="col-sm-4">
+			<input type="profissao" class="form-control" id="mae" placeholder="profissao" name="profissao">
+		</div>
+	</div><br>
+	
+		<div class="form-group row">
+		<div class="col-md-2 offset-md-2 col-sm-10">
+			<button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+		</div>
+	</div> 
+	
+</div>	
+</div>
+</form>
+
+<h5 class="logo">Adam Sinaga - 2023 </h5>
+
+<script src="/js/jquery-3.4.1.min.js"></script> 
+<script src="/js/popper.min.js" ></script>
+<script src="/js/bootstrap.min.js" ></script>
+</body>
+</html>
